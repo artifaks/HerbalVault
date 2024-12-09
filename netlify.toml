@@ -7,7 +7,3 @@
   to = "/index.html"
   status = 200
   force = true
-
-[build.environment]
-  VITE_SUPABASE_URL = "https://guafuutwjluavxwkfvbk.supabase.co"
-  VITE_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd1YWZ1dXR3amx1YXZ4d2tmdmJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM2Njg1NTIsImV4cCI6MjA0OTI0NDU1Mn0.Ep8_FmuLebw9iB9J1cLcO1fC3VaDGtYF4W_ovHn7Rx0"
