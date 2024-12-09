@@ -1,26 +1,24 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
-    emptyOutDir: true,
-    sourcemap: true,
+    assetsDir: 'public',
+    cssCodeSplit: false,
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-      },
       output: {
-        entryFileNames: `assets/[name].[hash].js`,
-        chunkFileNames: `assets/[name].[hash].js`,
-        assetFileNames: `assets/[name].[hash].[ext]`
-      }
+        assetFileNames: (assetInfo) => {
+          let extType = assetInfo.name.split('.').at(1);
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+            extType = 'img';
+          }
+          return `public/${extType}/[name][extname]`;
+        },
+        chunkFileNames: 'public/js/[name].js',
+        entryFileNames: 'public/js/[name].js',
+      },
     },
-  },
-  server: {
-    port: 5173,
-    host: true,
   },
 });
