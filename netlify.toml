@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm install && npm run build"
   publish = "dist"
 
 [[redirects]]
@@ -9,13 +9,13 @@
   force = true
 
 [[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Content-Type = "application/javascript"
-
-[[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
