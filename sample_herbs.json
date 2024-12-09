@@ -1,0 +1,50 @@
+[
+  {
+    "common_name": "Elderberry",
+    "scientific_name": "Sambucus nigra",
+    "description": "Elderberry is a flowering plant known for its dark purple berries and immune-boosting properties.",
+    "traditional_uses": [
+      "Cold and flu treatment",
+      "Immune system support",
+      "Respiratory health"
+    ],
+    "modern_uses": [
+      "Antiviral supplement",
+      "Upper respiratory support",
+      "Antioxidant boost"
+    ],
+    "safety_precautions": [
+      "Raw berries can cause nausea",
+      "Not recommended during pregnancy",
+      "May interact with immune-suppressing drugs"
+    ],
+    "images": {
+      "fresh": "https://images.unsplash.com/photo-1597736595206-99a0e3b20fcc",
+      "dried": "https://images.unsplash.com/photo-1597736595206-99a0e3b20fcc"
+    }
+  },
+  {
+    "common_name": "Rosemary",
+    "scientific_name": "Rosmarinus officinalis",
+    "description": "Rosemary is an aromatic evergreen herb with needle-like leaves, known for its distinctive scent and culinary uses.",
+    "traditional_uses": [
+      "Memory enhancement",
+      "Hair growth",
+      "Digestive aid"
+    ],
+    "modern_uses": [
+      "Cognitive function",
+      "Antimicrobial properties",
+      "Antioxidant support"
+    ],
+    "safety_precautions": [
+      "May affect blood pressure",
+      "Can interact with blood thinners",
+      "Use with caution during pregnancy"
+    ],
+    "images": {
+      "fresh": "https://images.unsplash.com/photo-1515586000433-45406d8e6662",
+      "dried": "https://images.unsplash.com/photo-1515586000433-45406d8e6662"
+    }
+  }
+]
